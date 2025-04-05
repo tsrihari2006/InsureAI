@@ -1,0 +1,81 @@
+.chatbox-container {
+    width: 30%;  /* Chatbox takes 30% of the total width */
+    height: calc(92vh - 20px); /* Full height minus 20px for spacing */
+    position: fixed; /* Fix position on the screen */
+    bottom: 10px; /* Add space at the bottom */
+    right: 0; /* Align to the right side */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+/* Chatbox Header */
+.chatbox-header {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Messages Section */
+.chatbox-messages {
+    flex: 1;
+    padding: 12px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Individual Message */
+.chat-message {
+    background: #f1f1f1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* User Messages */
+.user {
+    align-self: flex-end;
+    background: #007bff;
+    color: white;
+}
+
+/* Chat Input Section */
+.chatbox-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+/* Input Field */
+.chatbox-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Send Button */
+.chatbox-input button {
+    margin-left: 8px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbox-input button:hover {
+    background: #0056b3;
+}
